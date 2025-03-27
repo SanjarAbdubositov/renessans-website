@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <script defer src="../js/script.js"></script>
+    <title>Bog'lanish</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="logo"><span>Renessans</span></a>
+        <button class="menu-btn">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="success.html">Muvaffaqqiyatlarimiz</a></li>
+            <li><a href="about.html">Biz haqimizda</a></li>
+            <li><a href="../test/index.html">Test</a></li>
+            <li><a href="contact.html">Bog'lanish</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="contact-form">
+        <h2>Bog‘lanish</h2>
+        
+        <label>Ismingiz</label>
+        <input type="text" id="name" placeholder="Ismingizni yozing">
+        
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Emailingizni yozing">
+        
+        <label>Telefon raqamingiz</label>
+        <input type="tel" id="phone" placeholder="+998 90 123 45 67">
+        
+        <label>Telegram username</label>
+        <input type="text" id="telegram" placeholder="@username">
+        
+        <label>Xabar</label>
+        <textarea id="message" placeholder="Xabaringizni yozing. Masalan: Testdan nechta yechganingiz haqida."></textarea>
+        
+        <button class="send-btn" onclick="sendEmail()">Jo‘natish</button>
+    </div>    
+    
+</body>
+</html>

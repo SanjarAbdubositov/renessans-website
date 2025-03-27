@@ -1,0 +1,213 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    background: linear-gradient(to right, #f4f4f9, #e0f7fa);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    font-size: 110%;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+.navbar span {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-btn.open {
+    transform: rotate(180deg);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.text {
+    padding-left: 40px;
+    padding-top: 2px;
+}
+
+/* contact */
+.contact-form {
+    width: 350px;
+    margin: 50px auto;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+}
+
+.send-btn {
+    width: 100%;
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.send-btn:hover {
+    background: #2980b9;
+}
+
+
+/* contact */
+
+.faq-questions {
+    padding: 20px 40px;
+}
+
+.faq-questions h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.faq-questions details {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.faq-questions details summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    padding-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.faq-questions details summary:hover {
+    color: #007bff;
+}
+
+.faq-questions details summary::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.4s ease;
+}
+
+.faq-questions details[open] summary::before {
+    color: #007bff;
+    content: "−";
+    transform: rotate(180deg);
+}
+
+.faq-questions details p {
+    margin: 10px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.faq-questions details[open] p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+@media (max-width: 850px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgb(248, 249, 250);
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f4f4f9, #e0f7fa);
+    color: white;
+}
+.return-homepage {
+    text-align: left;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: #f8f9fa; 
+    font-size: 110%;
+    position: relative;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.return-homepage a{
+    color: #222;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.return-homepage a:hover {
+    color: #007bff;
+}
+
+.quiz-container {
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.choice {
+    width: 40%;
+    margin: 40px auto;
+    padding: 15px;
+    line-height: 2;
+    background-color: #f8f9fa;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.choice a{
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 110%;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.choice a:hover{
+    color: #007bff;
+}
+
+.correct {
+    background-color: green !important;
+    color: white;
+}
+
+.wrong {
+    background-color: red !important;
+    color: white;
+}
+.green {
+    color: lightgreen;
+    font-weight: bold;
+}
+.blue {
+    color: yellow;
+    font-weight: bold;
+}
+.question {
+    font-weight: normal;
+}
