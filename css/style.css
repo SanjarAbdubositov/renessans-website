@@ -182,7 +182,7 @@ body {
 
 @media (max-width: 850px) {
     .contact-form {
-        width: 450px;
+        width: 250px;
         margin: 50px auto;
         background: #222;
         padding: 20px;
@@ -191,7 +191,7 @@ body {
         color: white;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
-    
+
     .menu-btn {
         display: block;
     }
