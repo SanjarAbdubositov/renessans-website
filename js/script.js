@@ -23,4 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
             menuBtn.style.transform = "rotate(0deg)";
         }
     });
+
+    if (window.location.pathname.endsWith("index.html")) {
+        window.history.pushState({}, "", "/home");
+    }   
 });
