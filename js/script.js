@@ -28,3 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         window.history.pushState({}, "", "/home");
     }   
 });
+
+const developerName = 'Sanjar Abdubositov'
+const developerPhone = 943560901
+console.log('Dasturchi:', developerName);
+console.log('Telefon raqami:', developerPhone);
