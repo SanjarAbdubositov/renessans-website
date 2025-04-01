@@ -31,5 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const developerName = 'Sanjar Abdubositov'
 const developerPhone = 943560901
+const developerNote = '#2025 Barcha huquqlar himoyalangan'
 console.log('Dasturchi:', developerName);
 console.log('Telefon raqami:', developerPhone);
+console.log(developerNote);
